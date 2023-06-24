@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Chonburi&display=swap');
+
+.message {
+    font-family: 'Charm', cursive;
+}
+
+* {
+    font-size: 50px;
+    font-family: 'Chonburi', cursive;
+}
