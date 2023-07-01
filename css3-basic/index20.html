@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Style & Box Shadow</title>
+    <style>
+        img{
+            width: 500px;
+            box-shadow: 10px 10px 15px 5px skyblue; /* x y blur size color */
+        }
+        img:hover{
+            cursor: help;
+        }
+        li:hover{
+            cursor: crosshair;
+        }
+        div{
+            width: 500px;
+            height: 500px;
+            border: 5px solid pink;
+            box-shadow: 5px 5px 5px 10px black, -5px -5px 5px 10px orange;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/mountain-8079469_1280.jpg" alt="">
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+    </ul>
+
+    <div></div>
+</body>
+</html>

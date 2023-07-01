@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float & bix-sizing</title>
+    <style>
+        *{
+            box-sizing: border-box; /* ทำให้แต่ละ box มีขนาดตามที่ตั้งค่าไว้ */
+        }
+        body{
+            line-height: 1.4em;
+        }
+        .container{
+            width: 960px;
+            margin: 30px auto;
+        }
+        .box{
+            background: rgb(87, 87, 87);
+            border: 1px solid #333;
+            margin: 10px auto;
+        }
+        #box-2{
+            float: left;
+            width: 70%;
+        }
+        #box-3{
+            float: right;
+            width: 30%;
+        }
+        .clr{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h1>Title 1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo alias nemo qui iusto sed tempora ad! Atque corrupti, aperiam cumque tenetur, impedit expedita optio animi sunt, tempore soluta illum inventore?</p>
+        </div>
+        <div id="box-2" class="box">
+            <h1>Title 2</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo alias nemo qui iusto sed tempora ad! Atque corrupti, aperiam cumque tenetur, impedit expedita optio animi sunt, tempore soluta illum inventore?</p>
+        </div>
+        <div id="box-3" class="box">
+            <h1>Title 3</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo alias nemo qui iusto sed tempora ad! Atque corrupti, aperiam cumque tenetur, impedit expedita optio animi sunt, tempore soluta illum inventore?</p>
+        </div>
+        <div class="clr"></div>
+        <div id="box-4" class="box">
+            <h1>Title 4</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo alias nemo qui iusto sed tempora ad! Atque corrupti, aperiam cumque tenetur, impedit expedita optio animi sunt, tempore soluta illum inventore?</p>
+        </div>
+    </div>
+</body>
+</html>
