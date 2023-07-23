@@ -1,0 +1,13 @@
+p{
+    background-color: orange;
+}
+
+/* Descendant Selector */
+div p{
+    background-color: greenyellow;
+}
+
+/* Child Selector */
+div>p{
+    background-color: purple;
+}

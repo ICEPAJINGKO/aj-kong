@@ -1,0 +1,17 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 2px solid black;
+    margin: 100px;
+
+    /* transform: translate(200px, 500px); */
+    /* transform: rotate(45deg); */
+    /* transform: rotateX(100deg); */
+    /* transform: rotateY(100deg); */
+    /* transform: scale(1.8); */
+    /* transform: scale(1.8, 3); */
+    /* transform: skewX(10deg); */
+    /* transform: skewY(10deg); */
+    transform: skew(10deg, 10deg);
+}

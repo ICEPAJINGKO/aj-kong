@@ -6,9 +6,9 @@
 
 .container{
     background-color: aqua;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    height: 100vh;
     /* flex-wrap: wrap-reverse; */
     justify-content: center;
     align-items: flex-end;

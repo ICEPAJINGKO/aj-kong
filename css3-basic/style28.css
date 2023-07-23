@@ -1,0 +1,68 @@
+a{
+    background-color: orange;
+}
+a[target]{
+    background-color: red;
+}
+a[target="_blank"]{
+    background-color: blue;
+}
+
+input[type="email"], input[type="text"]{
+    width: 50%;
+}
+
+input[type="submit"]{
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------- */
+
+/* ตัวแรก */
+li:first-child{
+    background-color: aqua;
+}
+
+/* ตัวสุดท้าย */
+li:last-child{
+    background-color: purple;
+}
+
+/* เลือกลำดับที่จากต้น */
+li:nth-child(4){
+    background-color: chocolate;
+}
+
+/* เลือกลำดับที่จากท้าย */
+li:nth-last-child(4){
+    background-color: yellow;
+}
+/* ทุกๆกี่ตัว */
+li:nth-child(3n){
+    background-color: deeppink;
+}
+
+/* ทุกๆกี่ตัว + เริ่มจากลำดับที่? */
+/* li:nth-child(3n+5){ 
+    background-color: deeppink;
+} */
+
+/* เฉพาะลำดับคี่ */
+li:nth-child(odd){
+    background-color: green;
+}
+
+/* เฉพาะลำดับคู่ */
+li:nth-child(even){
+    background-color: greenyellow;
+}
+
+/* ------------------------------------------------- */
+
+/* What do you use it for? */
+.is-require::before{
+    content: "*";
+    color: red;
+    padding-left: 2px;
+}

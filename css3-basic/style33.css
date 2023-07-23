@@ -1,0 +1,64 @@
+body {
+    background-color: gray;
+}
+
+.box {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+
+    animation-name: ani1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes ani1 {
+    from {
+        width: 100px;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.box-2 {
+    background-color: hotpink;
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    animation-name: ani2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani2 {
+    0%{
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+    25%{
+        top: 0;
+        left: 25vh;
+        transform: rotate(45deg);
+    }
+    50%{
+        top: 50vh;
+        left: 25vh;
+        transform: rotate(90deg);
+    }
+    75%{
+        top: 50vh;
+        left: 0;
+        transform: rotate(45deg);
+    }
+    100%{
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+}

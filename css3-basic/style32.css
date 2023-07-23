@@ -1,0 +1,27 @@
+body{
+    background-color: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+
+    /* transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s; */
+    /* transition: background-color 0.5s ease-in-out 1s; */
+    transition: background-color 3s, width 3s, border-radius 3s ease-in-out 1s;
+    transition: all 0.5s ease-in-out 0.3s
+}
+
+.box:hover{
+    background-color: aqua;
+    /* width: 100%; */
+    border-radius: 50%;
+}

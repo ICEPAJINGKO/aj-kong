@@ -1,0 +1,23 @@
+:root{
+    --box-size: 5px solid blue;
+    --theam-web: red;
+    --theam-dark: var(--basic-color);
+    --basic-color: gray;
+}
+
+body{
+    background-color: var(--theam-dark);
+}
+
+.box-1{
+    border: var(--box-size);
+}
+
+.box-2{
+    border: var(--box-size);
+}
+
+.box-3{
+    border: var(--box-size);
+    background-color: var(--theam-web);
+}
