@@ -8,6 +8,8 @@ function App() {
     { id: "4", name: "Dog" },
   ]);
 
+  const [show, setShow] = useState(true);
+
   function deleteStudent(id){
     setStudent(students.filter((stud) => stud.id !== id));
   }
@@ -15,8 +17,12 @@ function App() {
   return (
     <>
       <h1>มีนักเรียนทั้งหมด : {students.length}</h1>
+      
+      <h1>{(show)? "SHOW": "OFF"}</h1>
+      <button onClick={() => setShow(!show)}>Toggle</button>
+  
       <ul>
-        {students.map((stud) => (
+        {show && students.map((stud) => (
           <li key={stud.id}>
             <p>{stud.id} : {stud.name}</p>
             <button onClick={() => deleteStudent(stud.id)}>delete</button>
